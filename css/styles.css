@@ -94,6 +94,7 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  justify-content: space-between;
 }
 
 .header-navigation {
@@ -104,7 +105,6 @@ img {
   color: var(--main-dark);
   display: flex;
   align-items: center;
-  margin-right: 332px;
 }
 
 .logo {
@@ -150,6 +150,7 @@ img {
 .header-address-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .header-mail {
@@ -171,7 +172,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  margin-left: 40px;
 }
 
 .header-tel:hover,
@@ -262,12 +262,6 @@ img {
 /* hero section */
 .hero {
   max-width: 100%;
-}
-
-.hero-container {
-  text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-color: var(--background-hero-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -276,6 +270,12 @@ img {
     url(../images/main-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hero-container {
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -321,7 +321,6 @@ img {
 
 .advantage-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
@@ -330,7 +329,6 @@ img {
 
 .advantage-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
-  max-width: 264px;
 }
 
 /*  стара версія для 
@@ -344,8 +342,11 @@ img {
 
 .advantage-item-decor {
   background-color: var(--light-color);
-  padding: 24px 102.14px;
+  padding: 24px 10px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* .advantage-icon {} */
@@ -377,12 +378,10 @@ img {
   flex-wrap: wrap;
   margin-top: 72px;
   gap: 24px;
-  width: 100%;
 }
 
 .about-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
-  max-width: 360px;
 }
 
 /* .about-item:not(:last-child) {
@@ -404,7 +403,6 @@ img {
   flex-wrap: wrap;
   margin-top: 72px;
   gap: 24px;
-  width: 100%;
 }
 
 .team-item {
