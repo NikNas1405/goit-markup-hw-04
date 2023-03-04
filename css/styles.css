@@ -238,10 +238,15 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-color, #f4f4fd);
 }
 
 .socialmedia-item-link:is(:hover, :focus) {
   background-color: var(--pressed-footer-icon-color);
+}
+
+.socialmedia-icon {
+  fill: currentColor;
 }
 
 .footer-title {
@@ -434,15 +439,16 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand-color);
+  color: var(--light-color, #f4f4fd);
 }
 
 .team-social-link:is(:hover, :focus) {
   background-color: var(--pressed-state-color);
 }
 
-/* .team-social-icon {
-  fill: var(--light-color, #f4f4fd);
-} */
+.team-social-icon {
+  fill: currentColor;
+}
 
 .team-subtitle {
   font-weight: 500;
